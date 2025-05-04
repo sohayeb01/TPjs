@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #resultats {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculatrice JavaScript</h1>
+    
+    <div class="form-group">
+        <label for="nombre1">Premier nombre:</label>
+        <input type="number" id="nombre1" placeholder="Entrez le premier nombre">
+    </div>
+    
+    <div class="form-group">
+        <label for="nombre2">Deuxième nombre:</label>
+        <input type="number" id="nombre2" placeholder="Entrez le deuxième nombre">
+    </div>
+    
+    <button id="calculer">Calculer</button>
+    
+    <div id="resultats">
+        <h2>Résultats:</h2>
+        <p id="somme"></p>
+        <p id="difference"></p>
+        <p id="produit"></p>
+        <p id="quotient"></p>
+    </div>
+    
+    <!-- Inclusion du script JavaScript -->
+    <script src="js/tp.js"></script>
+</body>
+</html>
